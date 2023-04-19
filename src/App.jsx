@@ -4,7 +4,11 @@ import { HashRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { Stats } from './components/Stats';
 import { Contenedor } from './components/Contenedor';
 import { guardado } from './contexto/local';
-import "./styles/styles.css"
+import "./styles/app.scss";
+import "./styles/contenedor.scss";
+import "./styles/header.scss";
+import "./styles/menu.scss";
+import "./styles/stats.scss";
 export function App(){
     return(
         <HashRouter>
