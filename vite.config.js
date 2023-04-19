@@ -4,7 +4,6 @@ import {defineConfig} from "vite";
 
 export default defineConfig(
     {
-        plugins:[sass(), react()],
-        base:"/v1/"
+        plugins:[sass(), react()]
     }
 );
