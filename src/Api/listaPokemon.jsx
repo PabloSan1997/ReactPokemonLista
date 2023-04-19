@@ -1,9 +1,10 @@
 import axios from "axios";
 import React from "react";
+import { guardado } from "../contexto/local";
 
 
 export function useListaPokemon(){
-    const [limi, setLimi] = React.useState(0);
+    const [limi, setLimi] = React.useState(guardado.leer()*10);
     const [lista, setLista] = React.useState([]);
     React.useEffect(()=>{
         (async ()=>{

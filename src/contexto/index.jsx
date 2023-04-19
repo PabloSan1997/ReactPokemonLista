@@ -8,7 +8,14 @@ export function Provedor({children}){
     const limitePokemones = 110;
     const {lista, setLimi} = useListaPokemon();
     const {setNombres, info} = usePersonaje();
-    console.log(info);
+    const presentar = (nose) => {
+        if (!!nose) {
+          const cadena = nose.split("");
+          cadena[0] = cadena[0].toLocaleUpperCase();
+          return cadena.join("");
+        }
+        return nose;
+      }
     return (
         <Contexto.Provider
             value={
@@ -17,7 +24,8 @@ export function Provedor({children}){
                    setLimi,
                    lista,
                    setNombres,
-                   info
+                   info,
+                   presentar
                 }
             }
         >
