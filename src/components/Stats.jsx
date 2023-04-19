@@ -1,5 +1,4 @@
-import React from 'react'
-import "../styles/stats.scss";
+import React from 'react';
 import { useContexto } from '../contexto';
 import { useNavigate, useParams } from 'react-router-dom';
 import { guardado } from '../contexto/local';

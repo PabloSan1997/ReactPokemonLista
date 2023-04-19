@@ -1,6 +1,5 @@
 import React from 'react'
 import login from "../recursos/logo1.svg";
-import "../styles/header.scss";
 
 export function Header() {
   return (

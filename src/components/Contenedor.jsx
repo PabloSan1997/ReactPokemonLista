@@ -1,7 +1,6 @@
 import React from 'react'
 import { Menu } from './Menu'
 import { useNavigate, useParams } from 'react-router-dom'
-import "../styles/contenedor.scss";
 import { useContexto } from '../contexto';
 import { guardado } from '../contexto/local';
 

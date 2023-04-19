@@ -1,6 +1,5 @@
-import React from 'react'
-import { NavLink} from 'react-router-dom'
-import "../styles/menu.scss";
+import React from 'react';
+import { NavLink} from 'react-router-dom';
 import { useContexto } from '../contexto';
 export function Menu() {
     const {limitePokemones} = useContexto();
