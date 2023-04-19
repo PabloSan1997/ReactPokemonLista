@@ -1,9 +1,7 @@
-import react from "@vitejs/plugin-react";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 import sass from "vite-plugin-sass-dts";
-import {defineConfig} from "vite";
-
-export default defineConfig(
-    {
-        plugins:[sass(), react()]
-    }
-);
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react(), sass()],
+})
