@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;500;700&family=Inconsolata&family=Rubik:ital@1&display=swap');
+.menu {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+    .mover {
+        color: white;
+        background: rgb(2, 1, 20);
+        border-radius: 5px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
+        &:hover{
+            background: rgb(10, 10, 134);
+        }
+        &.mover1 {
+            margin: auto 2% auto auto;
+        }
+
+        &.mover2 {
+            margin: auto auto auto 2%;
+        }
+    }
+
+    nav {
+        width: 50%;
+
+        height: 80%;
+        overflow: hidden;
+
+        ul {
+            display: flex;
+            list-style: none;
+            height: 100%;
+            width: 100%;
+            li {
+                width: 10%;
+                height: 80%;
+                margin: auto 1.25%;
+
+                a {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    color: white;
+                    background: rgb(2, 1, 20);
+                    border-radius: 5px;
+
+                    &:hover{
+                        background: rgb(10, 10, 134);
+                    }
+                    &.activar {
+                        background: rgb(10, 10, 134);
+                    }
+                }
+            }
+        }
+    }
+}

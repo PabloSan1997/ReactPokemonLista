@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;500;700&family=Inconsolata&family=Rubik:ital@1&display=swap');
+
+.contenedor{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    .derecha{
+        width: 80%;
+        height: 95%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        .caja{
+            width: 23%;
+            height: 45%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 0 2px black;
+            border-radius: 30px;
+            &:hover{
+                background: rgb(202, 202, 202);
+                box-shadow: 0 0 5px black;
+                .foto{
+                    transform: scale(1.5);
+                }
+            }
+            &:active{
+                box-shadow: 0 0 2px black;
+                .foto{
+                    transform: scale(1);
+                }
+            }
+            cursor: pointer;
+            h2{
+                margin: auto;
+                font-family: 'Chivo Mono', monospace;
+                font-weight: 400;
+                color: rgb(3, 3, 37);
+            }
+            .foto{
+                width: 50%;
+                margin: auto;
+                filter: drop-shadow(0 0 5px black);
+            }
+        }
+    }
+}
